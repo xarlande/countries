@@ -24,6 +24,7 @@ const goToRandomCountry = () => {
   if (!countries.value?.length) return
   const randomIndex = Math.floor(Math.random() * countries.value.length)
   const randomCountry = countries.value[randomIndex]
+  if (!randomCountry) return
   navigateTo(`/country/${randomCountry.cca3}`)
 }
 </script>
