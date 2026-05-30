@@ -11,9 +11,15 @@ export default defineNuxtConfig({
 
   app: {
     rootId: 'app',
+    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       meta: [
         { name: 'generator', content: 'World Explorer' }
+      ],
+      link: [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap' }
       ]
     }
   },

@@ -1,9 +1,11 @@
-<script setup>
+<script setup lang="ts">
+const url = useRequestURL()
+
 useHead({
   meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
   link: [{ rel: 'icon', href: '/favicon.ico' }],
   htmlAttrs: {
-    lang: 'en'
+    lang: 'uk'
   }
 })
 
@@ -24,14 +26,14 @@ const shareSite = async () => {
   const shareData = {
     title: 'Explorer — Досліджуй світ',
     text: 'Крутий сервіс для пошуку країн та планування подорожей!',
-    url: window.location.origin
+    url: url.origin
   }
 
   try {
-    if (navigator.share) {
+    if (import.meta.client && navigator.share) {
       await navigator.share(shareData)
     } else {
-      await navigator.clipboard.writeText(window.location.origin)
+      await navigator.clipboard.writeText(url.origin)
       toast.add({
         title: 'Посилання скопійовано!',
         description: 'Тепер ви можете поділитися ним з друзями.',

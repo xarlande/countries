@@ -9,7 +9,7 @@ defineProps<{
 <template>
   <ULink
     :to="`/country/${country.cca3}`"
-    class="group block bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden hover:ring-2 hover:ring-primary-500 transition-all"
+    class="group block bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 overflow-hidden hover:ring-2 hover:ring-primary-500 transition-all animate-in fade-in slide-in-from-bottom-4 duration-500"
   >
     <div class="aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
       <img

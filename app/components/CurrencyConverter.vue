@@ -8,7 +8,7 @@ const baseCurrency = ref('UAH')
 const availableBases = ['UAH', 'USD', 'EUR']
 
 const { getExchangeRates } = useCurrency()
-const { data: exchangeData, pending, error } = await getExchangeRates(baseCurrency.value)
+const { data: exchangeData, pending, error } = await getExchangeRates(baseCurrency)
 
 const rate = computed(() => {
   if (!exchangeData.value) return null
@@ -18,11 +18,6 @@ const rate = computed(() => {
 const result = computed(() => {
   if (!rate.value) return null
   return (amount.value * rate.value).toFixed(2)
-})
-
-watch(baseCurrency, async (newBase) => {
-  const { data } = await getExchangeRates(newBase)
-  exchangeData.value = data.value
 })
 </script>
 

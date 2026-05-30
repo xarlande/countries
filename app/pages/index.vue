@@ -31,12 +31,12 @@ const goToRandomCountry = () => {
 
 <template>
   <UContainer class="py-10">
-    <header class="text-center mb-10">
-      <h1 class="text-4xl font-bold mb-4">
+    <header class="text-center mb-16 pt-10">
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-green-500 dark:from-primary-400 dark:to-green-300">
         Куди полетіти?
       </h1>
-      <p class="text-gray-500 dark:text-gray-400">
-        Відкрийте для себе наступну подорож
+      <p class="text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto font-medium">
+        Відкрийте для себе наступну подорож серед сотень країн світу з актуальною погодою та курсами валют.
       </p>
     </header>
 
