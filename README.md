@@ -1,31 +1,45 @@
-# Nuxt Starter Template
+# World Explorer (Куди полетіти?)
 
-## Setup
+Сучасний веб-додаток на базі Nuxt 4 для дослідження країн світу, що включає дані про погоду в реальному часі та конвертацію валют.
 
-Make sure to install the dependencies:
+## 🚀 Функціонал
 
-```bash
-pnpm install
-```
+- **Дослідження країн**: Перегляд та пошук країн з детальною інформацією.
+- **Дані про погоду**: Отримання актуальної інформації про погоду в столицях через OpenWeather API.
+- **Конвертер валют**: Зручна конвертація між різними валютами.
+- **Сучасний інтерфейс**: Побудовано за допомогою Nuxt UI та Tailwind CSS для забезпечення швидкого та адаптивного інтерфейсу.
 
-## Development Server
+## 🛠️ Технологічний стек
 
-Start the development server on `http://localhost:3000`:
+- **Фреймворк**: [Nuxt 4](https://nuxt.com/)
+- **Бібліотека компонентів**: [Nuxt UI](https://ui.nuxt.com/)
+- **Стилізація**: [Tailwind CSS](https://tailwindcss.com/)
+- **Іконки**: [Lucide](https://lucide.dev/) через Iconify
+- **API**: [OpenWeather](https://openweathermap.org/api)
 
-```bash
-pnpm dev
-```
+## 📦 Налаштування
 
-## Production
+1. **Встановлення залежностей**:
+   ```bash
+   pnpm install
+   ```
 
-Build the application for production:
+2. **Змінні оточення**:
+   Створіть файл `.env` на основі `.env.example` та додайте свій ключ OpenWeather API:
+   ```env
+   NUXT_PUBLIC_OPEN_WEATHER_API_KEY=ваш_ключ_тут
+   ```
 
-```bash
-pnpm build
-```
+3. **Запуск у режимі розробки**:
+   ```bash
+   pnpm dev
+   ```
 
-Locally preview production build:
+4. **Збірка для продакшну**:
+   ```bash
+   pnpm build
+   ```
 
-```bash
-pnpm preview
-```
+## 📝 Ліцензія
+
+Цей проект поширюється під ліцензією MIT.
