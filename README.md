@@ -1,45 +1,47 @@
-# World Explorer (Куди полетіти?)
+# World Explorer (Where to fly?)
 
-Сучасний веб-додаток на базі Nuxt 4 для дослідження країн світу, що включає дані про погоду в реальному часі та конвертацію валют.
+A modern web application built with Nuxt 4 for exploring countries worldwide, featuring real-time weather data and currency conversion.
 
-## 🚀 Функціонал
+[🇺🇦 Читати українською](./README.uk.md)
 
-- **Дослідження країн**: Перегляд та пошук країн з детальною інформацією.
-- **Дані про погоду**: Отримання актуальної інформації про погоду в столицях через OpenWeather API.
-- **Конвертер валют**: Зручна конвертація між різними валютами.
-- **Сучасний інтерфейс**: Побудовано за допомогою Nuxt UI та Tailwind CSS для забезпечення швидкого та адаптивного інтерфейсу.
+## 🚀 Features
 
-## 🛠️ Технологічний стек
+- **Country Exploration**: Browse and search countries with detailed information.
+- **Weather Data**: Real-time weather information for capital cities via OpenWeather API.
+- **Currency Converter**: Easy conversion between various currencies.
+- **Modern UI**: Built with Nuxt UI and Tailwind CSS for a fast, responsive experience.
 
-- **Фреймворк**: [Nuxt 4](https://nuxt.com/)
-- **Бібліотека компонентів**: [Nuxt UI](https://ui.nuxt.com/)
-- **Стилізація**: [Tailwind CSS](https://tailwindcss.com/)
-- **Іконки**: [Lucide](https://lucide.dev/) через Iconify
+## 🛠️ Tech Stack
+
+- **Framework**: [Nuxt 4](https://nuxt.com/)
+- **Component Library**: [Nuxt UI](https://ui.nuxt.com/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide](https://lucide.dev/) via Iconify
 - **API**: [OpenWeather](https://openweathermap.org/api)
 
-## 📦 Налаштування
+## 📦 Setup
 
-1. **Встановлення залежностей**:
+1. **Install dependencies**:
    ```bash
    pnpm install
    ```
 
-2. **Змінні оточення**:
-   Створіть файл `.env` на основі `.env.example` та додайте свій ключ OpenWeather API:
+2. **Environment Variables**:
+   Create a `.env` file based on `.env.example` and add your OpenWeather API key:
    ```env
-   NUXT_PUBLIC_OPEN_WEATHER_API_KEY=ваш_ключ_тут
+   NUXT_PUBLIC_OPEN_WEATHER_API_KEY=your_key_here
    ```
 
-3. **Запуск у режимі розробки**:
+3. **Development Mode**:
    ```bash
    pnpm dev
    ```
 
-4. **Збірка для продакшну**:
+4. **Production Build**:
    ```bash
    pnpm build
    ```
 
-## 📝 Ліцензія
+## 📝 License
 
-Цей проект поширюється під ліцензією MIT.
+This project is licensed under the MIT License.
